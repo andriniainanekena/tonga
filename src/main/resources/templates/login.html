@@ -5,7 +5,8 @@
     <main class="login-card">
       <a class="brand justify-center" th:href="@{/}"
         ><span class="brand-mark"
-          ><svg aria-hidden="true"><use href="/icons/sprite.svg#scan"></use></svg
+          ><svg aria-hidden="true">
+            <use href="/icons/sprite.svg#scan"></use></svg
         ></span>
         TONGA<span class="brand-dot">.</span></a
       >
@@ -17,9 +18,15 @@
       <div th:if="${param.error}" class="form-alert" role="alert">
         Incorrect username or password.
       </div>
-      <div th:if="${param.logout}" class="notice" role="status">You have signed out.</div>
+      <div th:if="${param.logout}" class="notice" role="status">
+        You have signed out.
+      </div>
       <form th:action="@{/login}" method="post" class="form-stack">
-        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <input
+          type="hidden"
+          th:name="${_csrf.parameterName}"
+          th:value="${_csrf.token}"
+        />
         <div class="form-field">
           <label for="username">Username</label
           ><input
@@ -44,12 +51,17 @@
           />
         </div>
         <button type="submit" class="button button-primary button-full">
-          Sign in <svg aria-hidden="true"><use href="/icons/sprite.svg#arrow-right"></use></svg>
+          Sign in
+          <svg aria-hidden="true">
+            <use href="/icons/sprite.svg#arrow-right"></use>
+          </svg>
         </button>
       </form>
       <a class="return-link" th:href="@{/}"
-        ><svg aria-hidden="true"><use href="/icons/sprite.svg#arrow-left"></use></svg> Back to
-        home</a
+        ><svg aria-hidden="true">
+          <use href="/icons/sprite.svg#arrow-left"></use>
+        </svg>
+        Back to home</a
       >
     </main>
   </body>

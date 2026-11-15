@@ -11,9 +11,14 @@
   </head>
   <body>
     <aside th:fragment="sidebar(active)" class="sidebar" id="sidebar">
-      <a href="/dashboard" class="brand brand-sidebar" aria-label="TONGA dashboard">
+      <a
+        href="/dashboard"
+        class="brand brand-sidebar"
+        aria-label="TONGA dashboard"
+      >
         <span class="brand-mark"
-          ><svg aria-hidden="true"><use href="/icons/sprite.svg#scan"></use></svg
+          ><svg aria-hidden="true">
+            <use href="/icons/sprite.svg#scan"></use></svg
         ></span>
         <span>TONGA<span class="brand-dot">.</span></span>
       </a>
@@ -24,28 +29,42 @@
           th:classappend="${active == 'dashboard'} ? ' nav-active' : ''"
           class="nav-link"
         >
-          <svg aria-hidden="true"><use href="/icons/sprite.svg#dashboard"></use></svg> Dashboard
+          <svg aria-hidden="true">
+            <use href="/icons/sprite.svg#dashboard"></use>
+          </svg>
+          Dashboard
         </a>
         <a
           th:href="@{/persons}"
           th:classappend="${active == 'persons'} ? ' nav-active' : ''"
           class="nav-link"
         >
-          <svg aria-hidden="true"><use href="/icons/sprite.svg#users"></use></svg> People
+          <svg aria-hidden="true">
+            <use href="/icons/sprite.svg#users"></use>
+          </svg>
+          People
         </a>
         <a
           th:href="@{/presence}"
           th:classappend="${active == 'presence'} ? ' nav-active' : ''"
           class="nav-link"
         >
-          <svg aria-hidden="true"><use href="/icons/sprite.svg#calendar"></use></svg> Presence
+          <svg aria-hidden="true">
+            <use href="/icons/sprite.svg#calendar"></use>
+          </svg>
+          Presence
         </a>
       </nav>
       <div class="sidebar-bottom">
-        <div class="sidebar-system"><span class="status-pulse"></span> System ready</div>
+        <div class="sidebar-system">
+          <span class="status-pulse"></span> System ready
+        </div>
         <form th:action="@{/logout}" method="post">
           <button type="submit" class="nav-link logout-link">
-            <svg aria-hidden="true"><use href="/icons/sprite.svg#log-out"></use></svg> Sign out
+            <svg aria-hidden="true">
+              <use href="/icons/sprite.svg#log-out"></use>
+            </svg>
+            Sign out
           </button>
         </form>
       </div>
@@ -53,7 +72,8 @@
     <header th:fragment="mobileHeader" class="mobile-header">
       <a href="/dashboard" class="brand" aria-label="TONGA dashboard">
         <span class="brand-mark"
-          ><svg aria-hidden="true"><use href="/icons/sprite.svg#scan"></use></svg
+          ><svg aria-hidden="true">
+            <use href="/icons/sprite.svg#scan"></use></svg
         ></span>
         TONGA<span class="brand-dot">.</span>
       </a>

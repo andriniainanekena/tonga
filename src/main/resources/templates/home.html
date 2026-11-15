@@ -6,54 +6,82 @@
       <header class="public-header">
         <a class="brand" th:href="@{/}"
           ><span class="brand-mark"
-            ><svg aria-hidden="true"><use href="/icons/sprite.svg#scan"></use></svg
+            ><svg aria-hidden="true">
+              <use href="/icons/sprite.svg#scan"></use></svg
           ></span>
           TONGA<span class="brand-dot">.</span></a
         >
         <a class="button button-outline button-small" th:href="@{/login}"
           >Admin sign in
-          <svg aria-hidden="true"><use href="/icons/sprite.svg#arrow-up-right"></use></svg
+          <svg aria-hidden="true">
+            <use href="/icons/sprite.svg#arrow-up-right"></use></svg
         ></a>
       </header>
       <main>
         <section class="hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-dot"></span> RFID ACCESS &amp; PRESENCE</div>
-            <h1>Simple access.<br /><span class="accent-text">Clear records.</span></h1>
-            <p>Scan a card to check access, open the gate, and save entry and exit times.</p>
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span> RFID ACCESS &amp; PRESENCE
+            </div>
+            <h1>
+              Simple access.<br /><span class="accent-text"
+                >Clear records.</span
+              >
+            </h1>
+            <p>
+              Scan a card to check access, open the gate, and save entry and
+              exit times.
+            </p>
             <div class="hero-actions">
               <a th:href="@{/login}" class="button button-primary"
                 >Open dashboard
-                <svg aria-hidden="true"><use href="/icons/sprite.svg#arrow-right"></use></svg></a
-              ><a href="#how-it-works" class="button button-text">How it works</a>
+                <svg aria-hidden="true">
+                  <use href="/icons/sprite.svg#arrow-right"></use></svg></a
+              ><a href="#how-it-works" class="button button-text"
+                >How it works</a
+              >
             </div>
           </div>
-          <div class="hero-visual" aria-label="RFID to gate and presence diagram">
+          <div
+            class="hero-visual"
+            aria-label="RFID to gate and presence diagram"
+          >
             <div class="visual-top">
               <span class="subtle-label">THE FLOW</span
               ><span class="live-indicator"><span></span> Card check</span>
             </div>
             <div class="flow-card">
               <span class="flow-icon"
-                ><svg aria-hidden="true"><use href="/icons/sprite.svg#credit-card"></use></svg
+                ><svg aria-hidden="true">
+                  <use href="/icons/sprite.svg#credit-card"></use></svg
               ></span>
-              <div><strong>RFID card</strong><small>Present a registered card</small></div>
+              <div>
+                <strong>RFID card</strong
+                ><small>Present a registered card</small>
+              </div>
               <span class="flow-step">01</span>
             </div>
             <div class="flow-line"></div>
             <div class="flow-card">
               <span class="flow-icon"
-                ><svg aria-hidden="true"><use href="/icons/sprite.svg#cpu"></use></svg
+                ><svg aria-hidden="true">
+                  <use href="/icons/sprite.svg#cpu"></use></svg
               ></span>
-              <div><strong>ESP8266 + server</strong><small>Card is checked</small></div>
+              <div>
+                <strong>ESP8266 + server</strong><small>Card is checked</small>
+              </div>
               <span class="flow-step">02</span>
             </div>
             <div class="flow-line"></div>
             <div class="flow-card">
               <span class="flow-icon"
-                ><svg aria-hidden="true"><use href="/icons/sprite.svg#door-open"></use></svg
+                ><svg aria-hidden="true">
+                  <use href="/icons/sprite.svg#door-open"></use></svg
               ></span>
-              <div><strong>Gate + record</strong><small>Access approved, time saved</small></div>
+              <div>
+                <strong>Gate + record</strong
+                ><small>Access approved, time saved</small>
+              </div>
               <span class="flow-step">03</span>
             </div>
             <div class="visual-footer">
@@ -72,25 +100,33 @@
           <div class="step-grid">
             <article class="step-card">
               <div class="step-number">01</div>
-              <svg aria-hidden="true"><use href="/icons/sprite.svg#credit-card"></use></svg>
+              <svg aria-hidden="true">
+                <use href="/icons/sprite.svg#credit-card"></use>
+              </svg>
               <h3>Scan</h3>
               <p>Present a registered RFID card.</p>
             </article>
             <article class="step-card">
               <div class="step-number">02</div>
-              <svg aria-hidden="true"><use href="/icons/sprite.svg#shield-check"></use></svg>
+              <svg aria-hidden="true">
+                <use href="/icons/sprite.svg#shield-check"></use>
+              </svg>
               <h3>Verify</h3>
               <p>The server checks the card.</p>
             </article>
             <article class="step-card">
               <div class="step-number">03</div>
-              <svg aria-hidden="true"><use href="/icons/sprite.svg#door-open"></use></svg>
+              <svg aria-hidden="true">
+                <use href="/icons/sprite.svg#door-open"></use>
+              </svg>
               <h3>Open</h3>
               <p>The gate opens when access is approved.</p>
             </article>
             <article class="step-card">
               <div class="step-number">04</div>
-              <svg aria-hidden="true"><use href="/icons/sprite.svg#clock"></use></svg>
+              <svg aria-hidden="true">
+                <use href="/icons/sprite.svg#clock"></use>
+              </svg>
               <h3>Record</h3>
               <p>Entry or exit is saved.</p>
             </article>
@@ -100,7 +136,10 @@
           <div>
             <span class="eyebrow small">VIDEO OVERVIEW</span>
             <h2>See how TONGA works</h2>
-            <p>Follow a card scan through the access check, gate control, and presence record.</p>
+            <p>
+              Follow a card scan through the access check, gate control, and
+              presence record.
+            </p>
           </div>
           <video
             class="demo-video"
