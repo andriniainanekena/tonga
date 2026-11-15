@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@source "../src/main/resources/templates/**/*.html";
+@source "./main.ts";
+@theme {
+  --color-brand: #176c65;
+  --font-sans: "Quicksand", "Avenir Next", ui-sans-serif, system-ui, sans-serif;
+}
+/* The small custom layer gives server-rendered pages consistent reusable elements. */
+@import "./layout.css";

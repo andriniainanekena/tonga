@@ -1,0 +1,15 @@
+{
+  "name": "tonga-frontend",
+  "private": true,
+  "version": "1.0.2",
+  "scripts": {
+    "build:css": "node build-css.js",
+    "build:js": "tsc -p ./tsconfig.json",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "devDependencies": {
+    "prettier": "3.10.1",
+    "tailwindcss": "4.1.10",
+    "typescript": "^5.8.3"
+  }
+}
